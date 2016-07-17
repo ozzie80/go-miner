@@ -17,10 +17,10 @@ The k-means implementation of go-miner uses the [k-means++](https://en.wikipedia
 Usage Example
 
     // Create points or read from a .csv file
-    points := []dt.Vector{{1.0, 2.0, 3.5}, {5.1, 2.2, 4.3}, {2.0, 3.5, 5.0}}
+    points := []dt.Vector{{1.0, 2.0, 3.0}, {5.1, 6.2, 7.3}, {2.0, 3.5, 5.0}}
     
     // Specify Parameters: K, Points, MaxIter (optional) 
-    params := kmeans.Params{3, points, math.MaxInt64}
+    params := kmeans.Params{2, points, math.MaxInt64}
 
 	// Run k-means
 	clusters, err := kmeans.Run(params)
