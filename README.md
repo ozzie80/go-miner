@@ -1,4 +1,4 @@
-# go-miner
+# go-miner #
 Data Mining Algorithms in GoLang.
 
 ## Installation
@@ -11,12 +11,8 @@ $ go get github.com/ozzie80/go-miner
 Description From [Wikipedia](https://en.wikipedia.org/wiki/K-means_clustering): 
 > k-means clustering aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean, serving as a prototype of the cluster. This results in a partitioning of the data space into Voronoi cells.
 
-The k-means implementation of go-miner uses the [k-means++](https://en.wikipedia.org/wiki/K-means%2B%2B "k-means++") algorithm for choosing the initial cluster centroids. The implementation provides internal quality indexes, [Dunn Index](https://en.wikipedia.org/wiki/Dunn_index) and [Davies-Bouldin Index](https://en.wikipedia.org/wiki/Davies%E2%80%93Bouldin_index) for evaluating clustering results. 
+The k-means implementation of go-miner uses the [k-means++](https://en.wikipedia.org/wiki/K-means%2B%2B "k-means++") algorithm for choosing the initial cluster centroids. The implementation provides internal quality indexes, [Dunn Index](https://en.wikipedia.org/wiki/Dunn_index) and [Davies-Bouldin Index](https://en.wikipedia.org/wiki/Davies%E2%80%93Bouldin_index), for evaluating clustering results. 
 
-To Do
-
-- Concurrent version
-- Cuda/GPU version
 
 Usage Example
 
@@ -32,6 +28,12 @@ Usage Example
 	// Get quality index score
 	index := DunnIndex{} // DaviesBouldinIndex{}
 	score := index.GetScore(clusters)
+
+To Do
+
+- Concurrent version
+- Cuda/GPU version
+
 
 ### To Be Added
 - Apriori
