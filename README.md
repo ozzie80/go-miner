@@ -26,7 +26,7 @@ Usage Example
 	clusters, err := kmeans.Run(params)
 
 	// Get quality index score
-	index := DunnIndex{} // DaviesBouldinIndex{}
+	index := kmeans.DunnIndex{} // DaviesBouldinIndex{}
 	score := index.GetScore(clusters)
 
 To Do
